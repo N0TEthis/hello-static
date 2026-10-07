@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background: #008080;
-  color: #000000;
+  color: #000;
   font-family: "Courier New", monospace;
   font-size: 15px;
 }
@@ -19,29 +19,29 @@ body {
   width: 800px;
   max-width: calc(100% - 20px);
   margin: 15px auto;
-  background: #c0c0c0;
-  border: 3px outset #ffffff;
   padding: 8px;
+  background: #c0c0c0;
+  border: 3px outset #fff;
 }
 
 .top {
-  text-align: center;
-  background: #000080;
-  color: #ffffff;
-  border: 3px inset #ffffff;
   padding: 15px 5px;
+  text-align: center;
+  color: #fff;
+  background: #000080;
+  border: 3px inset #fff;
 }
 
 .logo {
   font-family: "Times New Roman", serif;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 2px 2px #000;
 }
 
 .blink {
   margin: 12px 0 5px;
-  color: #ffff00;
+  color: #ff0;
   font-weight: bold;
 }
 
@@ -49,41 +49,35 @@ body {
   font-size: 11px;
 }
 
-.menu {
-  margin: 8px 0;
-  padding: 7px;
-  text-align: center;
-  background: #ffffff;
-  border: 2px inset #ffffff;
+a {
+  color: #00e;
 }
 
-.menu a {
-  margin: 0 5px;
-  color: #0000ee;
-  font-weight: bold;
+a:visited {
+  color: #551a8b;
 }
 
-.menu a:hover {
-  color: #ff0000;
-  background: #ffff00;
+a:hover {
+  color: #f00;
+  background: #ff0;
 }
 
 .window {
   margin: 12px 0;
-  border: 3px outset #ffffff;
   background: #c0c0c0;
+  border: 3px outset #fff;
 }
 
 .window-title {
   padding: 5px 8px;
+  color: #fff;
   background: #000080;
-  color: #ffffff;
   font-weight: bold;
 }
 
 .window-content {
   padding: 15px;
-  border: 2px inset #ffffff;
+  border: 2px inset #fff;
 }
 
 .center {
@@ -91,8 +85,8 @@ body {
 }
 
 h1 {
-  font-family: "Times New Roman", serif;
   color: #000080;
+  font-family: "Times New Roman", serif;
   font-size: 30px;
 }
 
@@ -105,38 +99,44 @@ p {
   line-height: 1.5;
 }
 
-a {
-  color: #0000ee;
+.menu {
+  margin: 8px 0;
+  padding: 7px;
+  text-align: center;
+  background: #fff;
+  border: 2px inset #fff;
 }
 
-a:visited {
-  color: #551a8b;
+.menu a {
+  margin: 0 5px;
+  color: #00e;
+  font-weight: bold;
 }
 
-a:hover {
-  color: #ff0000;
-  background: #ffff00;
+.menu a:hover {
+  color: #f00;
+  background: #ff0;
 }
 
 code {
   padding: 2px 4px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #808080;
 }
 
 hr {
-  border: 0;
-  border-top: 2px groove #ffffff;
   margin: 15px 0;
+  border: 0;
+  border-top: 2px groove #fff;
 }
 
 .construction {
   display: inline-block;
   margin: 20px 0;
   padding: 8px 15px;
-  background: #ffff00;
-  color: #ff0000;
-  border: 3px dashed #ff0000;
+  color: #f00;
+  background: #ff0;
+  border: 3px dashed #f00;
   font-weight: bold;
 }
 
@@ -149,9 +149,9 @@ hr {
   display: inline-block;
   margin: 10px;
   padding: 5px 12px;
-  background: #000000;
-  color: #00ff00;
-  border: 3px inset #ffffff;
+  color: #0f0;
+  background: #000;
+  border: 3px inset #fff;
   font-family: "Courier New", monospace;
   font-size: 28px;
   letter-spacing: 4px;
@@ -165,9 +165,9 @@ input {
 
 button {
   padding: 5px 12px;
+  color: #000;
   background: #c0c0c0;
-  color: #000000;
-  border: 3px outset #ffffff;
+  border: 3px outset #fff;
   cursor: pointer;
 }
 
@@ -177,7 +177,7 @@ button:active {
 
 input {
   padding: 5px;
-  border: 2px inset #ffffff;
+  border: 2px inset #fff;
 }
 
 .message {
@@ -194,8 +194,8 @@ input {
   display: inline-block;
   margin: 3px;
   padding: 3px 6px;
-  background: #ffffff;
-  border: 2px outset #ffffff;
+  background: #fff;
+  border: 2px outset #fff;
   font-size: 10px;
 }
 
@@ -204,7 +204,7 @@ footer {
   font-size: 12px;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .page {
     width: 100%;
     max-width: calc(100% - 10px);
