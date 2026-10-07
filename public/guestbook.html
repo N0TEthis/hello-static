@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign N0TE's Web Zone guestbook">
+  <title>★ GUESTBOOK - N0TE'S WEB ZONE ★</title>
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <div class="logo">★ N0TE'S WEB ZONE ★</div>
+      <p class="blink">SIGN MY GUESTBOOK!!!</p>
+      <p class="small">Your message will definitely go somewhere*</p>
+    </header>
+
+    <nav class="menu">
+      <a href="./index.html">[ HOME ]</a>
+      <a href="./about.html">[ ABOUT ]</a>
+      <a href="./projects.html">[ PROJECTS ]</a>
+      <a href="./guestbook.html">[ GUESTBOOK ]</a>
+      <a href="./links.html">[ LINKS ]</a>
+    </nav>
+
+    <main>
+      <section class="window">
+        <div class="window-title">GUESTBOOK.EXE</div>
+
+        <div class="window-content">
+          <h1>GUESTBOOK</h1>
+
+          <p>
+            Leave a message for the webmaster!
+          </p>
+
+          <form id="guestbook-form">
+            <p>
+              <label for="guest-name">Your name:</label><br>
+              <input id="guest-name" name="name" type="text" required>
+            </p>
+
+            <p>
+              <label for="guest-message">Your message:</label><br>
+              <input id="guest-message" name="message" type="text" required>
+            </p>
+
+            <button type="submit">SIGN GUESTBOOK</button>
+          </form>
+
+          <p id="guestbook-message" class="message"></p>
+
+          <hr>
+
+          <p class="small">
+            * Actually, this is a static website, so your message
+            isn't stored anywhere. Sorry. 😎
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>★ THANK YOU FOR SIGNING! ★</p>
+      <p>© 2026 N0TE'S WEB ZONE</p>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

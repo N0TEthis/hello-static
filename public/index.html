@@ -1,227 +1,97 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="N0TE's retro Web 1.0 homepage">
+  <title>★ N0TE'S WEB ZONE ★</title>
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <div class="logo">★ N0TE'S WEB ZONE ★</div>
+      <p class="blink">WELCOME TO MY HOMEPAGE!!!</p>
+      <p class="small">Best viewed in 800x600 • Netscape Navigator recommended</p>
+    </header>
 
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="stylesheet" href="./style.css">
+    <nav class="menu">
+      <a href="./index.html">[ HOME ]</a>
+      <a href="./about.html">[ ABOUT ]</a>
+      <a href="./projects.html">[ PROJECTS ]</a>
+      <a href="./guestbook.html">[ GUESTBOOK ]</a>
+      <a href="./links.html">[ LINKS ]</a>
+    </nav>
 
-    <title>★ N0TE's Web Zone ★</title>
-  </head>
+    <main>
+      <section class="window">
+        <div class="window-title">WELCOME.TXT</div>
+        <div class="window-content center">
+          <h1>WELCOME, INTERNET TRAVELER!</h1>
 
-  <body>
-    <div class="page">
+          <p>
+            You have discovered my totally legitimate corner
+            of the World Wide Web.
+          </p>
 
-      <header class="top">
-        <div class="logo">
-          ★ N0TE'S WEB ZONE ★
+          <div class="construction">
+            🚧 UNDER CONSTRUCTION 🚧
+          </div>
+
+          <p>
+            This website is powered by HTML, CSS, JavaScript
+            and questionable amounts of caffeine.
+          </p>
+
+          <div class="ascii">
+            <pre>
+      .--------.
+     / .------. \
+    / /        \ \
+    | |  WEB   | |
+    | |  ZONE  | |
+    | |________| |
+    \____________/
+            </pre>
+          </div>
         </div>
+      </section>
 
-        <p class="blink">
-          WELCOME TO MY HOMEPAGE!!!
-        </p>
-
-        <p class="small">
-          Best viewed in 800x600
-        </p>
-      </header>
-
-      <nav class="menu">
-        <a href="#home">[ HOME ]</a>
-        <a href="#about">[ ABOUT ME ]</a>
-        <a href="#stuff">[ MY STUFF ]</a>
-        <a href="#guestbook">[ GUESTBOOK ]</a>
-      </nav>
-
-      <main>
-
-        <section id="home" class="window">
-          <div class="window-title">
-            ★ Welcome! ★
-          </div>
-
-          <div class="window-content center">
-            <h1>HELLO, INTERNET!!!</h1>
-
-            <p>
-              Добро пожаловать на мою маленькую
-              страничку в интернете!
-            </p>
-
-            <p>
-              Здесь находятся мои проекты, мысли,
-              ссылки и немного бесполезной информации.
-            </p>
-
-            <div class="construction">
-              🚧 UNDER CONSTRUCTION 🚧
-            </div>
-
-            <p class="small">
-              Последнее обновление:
-              <strong>07.10.2026</strong>
-            </p>
-          </div>
-        </section>
-
-        <section id="about" class="window">
-          <div class="window-title">
-            ★ About Me ★
-          </div>
-
-          <div class="window-content">
-            <h2>WHO AM I?</h2>
-
-            <p>
-              Привет! Я N0TE.
-              Это моя личная веб-страничка.
-            </p>
-
-            <p>
-              Я изучаю программирование, Linux,
-              Docker, GitHub и всякие интересные
-              штуки, которые иногда заставляют
-              компьютер работать до трёх часов ночи.
-            </p>
-
-            <p>
-              Люблю старый интернет, пиксельные
-              сайты и времена, когда для создания
-              сайта было достаточно одного
-              <code>index.html</code>.
-            </p>
-
-            <hr>
-
-            <p class="center">
-              <strong>MY CURRENT MOOD:</strong>
-            </p>
-
-            <p class="ascii">
-              (•_•)<br>
-              &lt;) &nbsp; )╯<br>
-              / &nbsp; \
-            </p>
-          </div>
-        </section>
-
-        <section id="stuff" class="window">
-          <div class="window-title">
-            ★ My Stuff ★
-          </div>
-
-          <div class="window-content">
-            <h2>COOL THINGS</h2>
-
-            <ul>
-              <li>💻 Programming</li>
-              <li>🐧 Linux</li>
-              <li>🐳 Docker</li>
-              <li>🌐 HTML / CSS / JavaScript</li>
-              <li>⚙️ GitHub Actions</li>
-              <li>🎮 Games</li>
-              <li>☕ Too much coffee</li>
-            </ul>
-
-            <h2>MY FAVORITE LINKS</h2>
-
-            <p>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
-                → GitHub
-              </a>
-            </p>
-
-            <p>
-              <a href="https://developer.mozilla.org" target="_blank" rel="noreferrer">
-                → MDN Web Docs
-              </a>
-            </p>
-          </div>
-        </section>
-
-        <section class="window">
-          <div class="window-title">
-            ★ Visitor Counter ★
-          </div>
-
-          <div class="window-content center">
-            <p>
-              You are visitor number:
-            </p>
-
-            <div id="counter" class="counter">
-              000001
-            </div>
-
-            <button id="visitButton" type="button">
-              [ CLICK ME ]
-            </button>
-
-            <p id="message" class="message">
-              Thanks for visiting!!!
-            </p>
-          </div>
-        </section>
-
-        <section id="guestbook" class="window">
-          <div class="window-title">
-            ★ Guestbook ★
-          </div>
-
-          <div class="window-content center">
-            <p>
-              Sign my guestbook!!!
-            </p>
-
-            <form id="guestbookForm">
-              <label for="guestName">
-                Your name:
-              </label>
-
-              <input
-                id="guestName"
-                type="text"
-                maxlength="30"
-                required
-              >
-
-              <button type="submit">
-                [ SIGN GUESTBOOK ]
-              </button>
-            </form>
-
-            <p id="guestMessage" class="message"></p>
-          </div>
-        </section>
-
-      </main>
-
-      <footer>
-        <hr>
-
-        <p>
-          ★ This page was made with HTML, CSS &amp; JavaScript ★
-        </p>
-
-        <p>
-          No frameworks. No build system. Just the web.
-        </p>
-
-        <p class="small">
-          © 2026 N0TE's Web Zone
-        </p>
-
-        <div class="badges">
-          <span>HTML 5</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WEB 1.0</span>
+      <section class="window">
+        <div class="window-title">VISITOR COUNTER</div>
+        <div class="window-content center">
+          <p>You are visitor number:</p>
+          <div class="counter" id="counter">000001</div>
+          <p class="small">Thanks for visiting!!!</p>
         </div>
-      </footer>
+      </section>
 
-    </div>
+      <section class="window">
+        <div class="window-title">WEBMASTER'S MESSAGE</div>
+        <div class="window-content">
+          <h2>Hello, Internet!</h2>
 
-    <script src="./script.js"></script>
-  </body>
+          <p>
+            This is a small educational static website created
+            as a CI/CD project.
+          </p>
+
+          <p>
+            Explore the pages using the menu above and don't forget
+            to sign the guestbook!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>★ This page was made with HTML, CSS &amp; JavaScript ★</p>
+      <p>© 2026 N0TE'S WEB ZONE</p>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
 </html>
