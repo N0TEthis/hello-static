@@ -1,0 +1,20 @@
+{
+  "name": "hello-static",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "lint:html": "html-validate \"public/**/*.html\"",
+    "lint:css": "stylelint \"public/**/*.css\"",
+    "lint:js": "eslint \"public/**/*.js\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "html-validate": "^8.24.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
